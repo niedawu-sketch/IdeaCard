@@ -1,0 +1,44 @@
+.DS_Store
+node_modules/
+dist/
+.superpowers/
+.worktrees/
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.local
+*.local.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.mobileprovision
+
+# Personal application data
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+attachments/
+
+# Native builds and installers
+target/
+.build/
+.swiftpm/
+*.app/
+*.dmg
+
+# Test output
+test-results/
+playwright-report/
+coverage/

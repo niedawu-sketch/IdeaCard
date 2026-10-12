@@ -1,0 +1,57 @@
+[package]
+name = "ideacard"
+version = "0.1.0"
+description = "IdeaCard desktop application"
+authors = ["niedawu"]
+license = "MIT"
+repository = ""
+edition = "2021"
+rust-version = "1.97"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "ideacard_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+tauri = { version = "2.11.3", features = ["tray-icon"] }
+tauri-plugin-log = "2"
+unicode-segmentation = "1.13.3"
+rusqlite = { version = "0.40.1", features = ["bundled", "chrono"] }
+chrono = { version = "0.4.45", features = ["serde"] }
+uuid = { version = "1.23.5", features = ["v4", "serde"] }
+sha2 = "0.11.0"
+hex = "0.4.3"
+mime_guess = "2.0.5"
+tempfile = "3.27.0"
+thiserror = "2.0.18"
+tauri-plugin-shell = "2"
+async-trait = "0.1.89"
+arboard = "3.6.1"
+base64 = "0.22.1"
+url = "2.5.8"
+image = { version = "0.25.10", default-features = false, features = ["png"] }
+pdf-extract = "0.12.0"
+zip = { version = "8.6.0", default-features = false, features = ["deflate"] }
+quick-xml = "0.41.0"
+encoding_rs = "0.8.35"
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-notification = "2"
+reqwest = { version = "0.13.4", default-features = false, features = ["blocking", "json", "rustls"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+security-framework = "3.7.0"
+core-foundation = "0.10"
+block2 = "0.6.2"
+objc2 = "0.6.4"
+objc2-app-kit = { version = "0.3.2", features = ["block2"] }
+objc2-foundation = { version = "0.3.2", features = ["block2"] }
