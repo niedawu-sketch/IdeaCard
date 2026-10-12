@@ -4,7 +4,15 @@
 
 IdeaCard 是面向 macOS 的个人卡片工具。通过菜单栏、全局快捷键、剪贴板、截图 OCR 和文件导入收集内容，再用卡片整理、概念注释与 AI 对话帮助理解和延伸想法。
 
-目前处于早期开发阶段，界面以中文为主。正式桌面工程位于 `desktop/`，`prototype/` 保留最初的交互原型。当前只提供源码构建说明，尚未提供经过 Apple Developer ID 签名与公证的公开安装包。
+目前处于早期开发阶段，界面以中文为主。正式桌面工程位于 `desktop/`，`prototype/` 保留最初的交互原型。已提供未公证的 Mac 内测安装包，可直接下载安装。
+
+## 下载 Mac 内测版
+
+**[下载 IdeaCard v0.1.0-beta.1 安装包（约 14 MB）](https://github.com/niedawu-sketch/IdeaCard/releases/download/v0.1.0-beta.1/IdeaCard_0.1.0-beta.1_aarch64.dmg)** · [安装说明](https://github.com/niedawu-sketch/IdeaCard/releases/download/v0.1.0-beta.1/2026-10-12-installation-guide.txt) · [版本详情与校验文件](https://github.com/niedawu-sketch/IdeaCard/releases/tag/v0.1.0-beta.1)
+
+适用于 **M 系列芯片 Mac（Apple Silicon），macOS 14 及以上**；本机启动验证在 macOS 26.5.2 完成。打开下载的 `.dmg`，将 `IdeaCard.app` 拖入“应用程序”；已有旧版时先从菜单栏退出应用。
+
+这是未经过 Apple 公证的内测版，首次打开可能出现安全提示，请按安装说明操作。AI 功能需要自行配置 API Key；不配置 AI 也可使用基础记录与整理功能。
 
 ![IdeaCard 收集箱与卡片详情](docs/2026-10-12-desktop-preview.png)
 
